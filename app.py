@@ -53,27 +53,3 @@ if uploaded_file is not None:
 
 
 
-
-
-
-
-# ==== Accuracy on test dataset ====
-test_path = "/content/fracture_dataset/BoneFractureDataset/testing"
-if os.path.exists(test_path):
-    test_dataset = datasets.ImageFolder(test_path, transform=transform)
-    test_loader = DataLoader(test_dataset, batch_size=32)
-
-    correct = 0
-    total = 0
-    with torch.no_grad():
-        for images, labels in test_loader:
-            outputs = model(images)
-            _, predicted = torch.max(outputs, 1)
-            total += labels.size(0)
-            correct += (predicted == labels).sum().item()
-
-    accuracy = 100 * correct / total
-    st.markdown(f"### 📊 Model Accuracy on Test Set: `{accuracy:.2f}%`")
-else:
-    st.warning("Test dataset not found. Accuracy evaluation skipped.")
-
