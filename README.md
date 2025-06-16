@@ -36,8 +36,8 @@ The model is trained using a dataset of labeled X-ray images and is capable of m
 ```bash
 git clone https://github.com/[your-username](https://github.com/Shamrithaa)/classification-of-bone-fracture.git
 cd classification-of-bone-fracture
-
-------
+```
+ ------
 
 ### 3. Environment Setup
 
@@ -45,8 +45,10 @@ Install all dependencies listed in requirements.txt:
 
 bash```
 pip install -r requirements.txt
------
-### 4. Run the Application
+
+ -----
+
+###  4. Run the Application
 
 Launch the Streamlit app:
 
