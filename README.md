@@ -24,15 +24,32 @@ The model is trained using a dataset of labeled X-ray images and is capable of m
 
 ## Getting Started
 
-### Prerequisites
+### 1. Prerequisites
 
 - Python 3.8 or later
 - pip package manager
 
-### Installation
+ ------
 
-1. Clone the repository:
+### 2. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/classification-of-bone-fracture.git
+git clone https://github.com/[your-username](https://github.com/Shamrithaa)/classification-of-bone-fracture.git
 cd classification-of-bone-fracture
+
+------
+
+### 3. Environment Setup
+
+Install all dependencies listed in requirements.txt:
+
+bash```
+pip install -r requirements.txt
+-----
+### 4. Run the Application
+
+Launch the Streamlit app:
+
+bash```
+streamlit run app.py
+----
