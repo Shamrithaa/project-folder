@@ -1,3 +1,5 @@
+
+
 # Classification of Bone Fracture
 
 This project focuses on detecting bone fractures in X-ray images using a deep learning model based on ResNet18. The application is built with PyTorch and deployed using Streamlit to provide an intuitive interface for users to upload and analyze X-ray images.
@@ -54,4 +56,5 @@ Launch the Streamlit app:
 
 bash```
 streamlit run app.py
---
+```
+---
